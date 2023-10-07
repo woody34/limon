@@ -19,8 +19,3 @@ spending more time fiddling with infrastructure than I would like. I wanted to
 minimize the time spent fiddling with knobs and config for infra and maximize
 time spend building product. For this reason Limon will be using Deno Deploy
 which removes build steps and deploys Typescript to the edge.
-
-#### Concepts
-
-- Mixin
-- Abstract Factory
