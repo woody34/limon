@@ -1,0 +1,17 @@
+overwrite: true
+schema:
+  - ${REALM_GRAPHQL_API_URL}:
+      headers:
+        apiKey: ${REALM_APP_USER_API_KEY}
+documents: modules/*/graphql/operations/*.tsx
+generates:
+  graphql/generated.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      flattenGeneratedTypes: true
+      skipTypename: true
+      withComponent: false
+      withHooks: false
